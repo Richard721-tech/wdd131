@@ -1,9 +1,11 @@
 header, h2, footer{
-    background-color: #1f4e79;   /* darker navy instead of #2f6cb2 */
+    background-color: #1f4e79;
 }
+
 h1, h2, nav.head a {
     font-family: Georgia, "Times New Roman", serif;
 }
+
 header{
     margin: 0;
     color: aliceblue;
@@ -13,9 +15,8 @@ header{
     align-items: center;
 }
 
-.p p{
-    max-width: 50%;
-    font-size: larger;
+header span{
+    font-size: 50px;
 }
 
 nav.head{
@@ -32,32 +33,6 @@ nav.head ul{
     justify-content: space-around;
     max-width: 1000px;
     width: 100%;
-}
-.profile-photo {
- 
-
-  max-width: 250px;
-  
-}
-
-.intro-text {
-  margin: 0;
-}
-
-.flag-img {
-  float: left;
-  max-width: 200px;
-  margin: 0 15px 10px 0;
-}
-
-.location-text {
-  margin: 0;
-}
-
-.card::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 nav.head li{
@@ -80,9 +55,49 @@ h1{
     font-size: 50px;
     text-align: center;
 }
+
+h2{
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 2px solid rgb(150, 149, 149);
+    border-radius: 0.9rem;
+    max-width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card p{
+    width: 40%;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 45px;
+    padding-top: 16px;
+}
+
+/* Consolidated: was defined twice */
 .card img {
   float: right;
   max-width: 250px;
+}
+
+/* Consolidated: was defined twice */
+.card::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .card .flag-img {
@@ -91,69 +106,53 @@ h1{
   margin: 0 15px 10px 0;
   padding-right: 20px;
 }
-.card::after {
-  content: "";
-  display: table;
-  clear: both;
-}  
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+.profile-photo {
+  max-width: 250px;
 }
 
- .card {
-    box-sizing: border-box;
-    border: 2px solid rgb(150, 149, 149);
-    border-radius: 0.9rem;
-    max-width: 100%;
-    overflow: hidden;
-    height: 100%;
+.intro-text {
+  margin: 0;
 }
-.card p{
-    width: 40%;
+
+.flag-img {
+  float: left;
+  max-width: 200px;
+  margin: 0 15px 10px 0;
 }
+
+.location-text {
+  margin: 0;
+}
+
 .city p{
     padding-left: 270px;
-    min-width:  70%;
+    min-width: 70%;
     font-size: larger;
 }
-.p p {
+
+.city img {
+    padding-left: 5px;
+}
+
+/* Consolidated: was defined twice */
+.p p{
+    max-width: 50%;
+    font-size: larger;
     padding-left: 3px;
     padding-right: 2px;
     min-width: 800px;
     padding-bottom: 60px;
 }
 
- header span{
-    font-size: 50px;
-}
 .p img{
  padding-left: 10%;
  padding-right: 7%;
  max-height: 250px;
 }
-.city img {
-    padding-left: 5px;
-}
+
 main img{
     max-width: 250px;
-}
-
-.card img {
-  float: right;
-  max-width: 250px;
-}
-
-h2 {
-    margin: 0;
-    padding: 12px 0;
-    border-radius: 0;
-    text-align: center;
-    color: #fff;
-    width: 100%;
-    font-size: 28px;
 }
 
 h3{
@@ -161,12 +160,6 @@ h3{
     border-bottom: solid 2px;
     width: 500px;
     padding-left: 20px;
-}
-
-.card ul {
-    list-style-type: disc;
-    padding-left: 45px;
-    padding-top: 16px;
 }
 
 li {
