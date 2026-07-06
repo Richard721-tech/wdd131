@@ -15,12 +15,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,99.4,100..900;1,99.4,100..900&display=swap" rel="stylesheet">
-<link rel="script" href="scripts/getdate.js">
+<script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h2>WDD 131: Dynamic Web Fundamentals</h2>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+
         <nav class="head">
             <ul>
                 <li><a href="https://www.linkedin.com/in/richard-ojofeyitimi-721rich">linkedin</a></li>
@@ -36,27 +37,29 @@
      <h1>Ojofeyitimi Richard</h1>
     <main>
        
-        <section class="card1">
+        <section class="card">
             <h2>About me</h2>
             <section class="p">
+                 <img src="images/profile.jpg" alt="Richard" class="profile-photo">
                 <p>My name is Richard. I am a student of BYU University, Salt Lake Utah. I am a web developer and also a
                     member of The Church of Jesus Christ of Latter-day Saints. I enjoy learning new things, especially 
                     in the area of technology and web development. Building websites and improving my programming skills
                     are some of the activities I spend most of my time doing. I also enjoy working on projects that 
                     challenge me to think creatively and solve real-world problems. I love spending quality time with
                     people and exploring places around me.</p>
-                <img src="images/profile.jpg" alt="Richard">
+               
             </section>
 
             <section class="city">
                 <h3>Oyo state, Nigeria</h3>
+                <img src="images/nigeria.jpg" alt="flag and map" class="flag-img">
                 <p>Nigeria is a country in the West Africa.it is bordered by Cameroun to the east, Benin republic 
                     to the west, Niger to the north, Chad to the northeast and atlantic ocean to the south.
                     oyo state in one the promising state in nigeria and it capital city is ibadan which is the 
                     largest city in west Africa, ibadan is well known for good security, peaceful and not too high
                     cost of living.
                 </p>
-                <img src="images/nigeria.jpg" alt="flag and map">
+                    
             </section>
 
 
@@ -99,8 +102,8 @@
 
 
     <footer>
-    <p id="copyright"></p>
-    <p id="lastModified"></p>
+    <p><span id="copyright"></span></p>
+  <p><span id="lastModified"></span></p>
 </footer>
 
 <script src="scripts/getdate.js"></script>
