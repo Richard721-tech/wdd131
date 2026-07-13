@@ -1,0 +1,40 @@
+@media only screen and (min-width: 48rem) { /* Approx 768px */
+
+    /* Hide Hamburger Control Block */
+    #menu {
+        display: none;
+    }
+
+    /* Convert Header layout structure */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        background-color: #4a148c;
+    }
+    
+    .header-container {
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    /* Transform Navigation Layout to Horizontal Bar */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        max-height: none; 
+        background-color: transparent;
+    }
+
+    .navigation a {
+        padding: 1rem 1.2rem;
+    }
+
+    /* Responsive Grid Scaling (Upgrades from 1 column to 3 columns) */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
